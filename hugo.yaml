@@ -1,0 +1,52 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: ""
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+params:
+  description: "Bergenline Group is a private investment and wealth management office."
+
+  theme:
+    default: light  # options: light | dark | system
+    displayToggle: false
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/BLG-LO-FF.png
+      dark: images/BLG-LO-FF-dark.png
+      link: /
+      width: 250
+#      height: 40
+
+  footer:
+    displayCopyright: true
+    copyright:
+      text: "© 2025 Bergenline Group"
+
+menu:
+  main:
+    - name: "About"
+      pageRef: /about
+      weight: 1
+    - name: "Portfolio"
+      pageRef: /portfolio
+      weight: 2
+    - name: "Contact"
+      pageRef: /contact
+      weight: 3
+
+assets:
+    customCSS:
+      - css/custom.css
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+

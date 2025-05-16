@@ -1,0 +1,166 @@
+.content {
+  font-family: "Myanmar";
+  color: #;
+}
+
+.content code:not(.code-block code) {
+  color: #223764;
+}
+
+.nav-container {
+  font-family: Myanmar;
+}
+
+.nav-container img {
+  padding-top: 20;
+  padding-bottom: 8;
+  font-family: Myanmar;
+/*  max-height: 48px;*/
+/*  height: auto;*/
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 3rem auto;
+  font-family: Myanmar;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+}
+
+/* Headings style */
+.main-content h1 {
+  font-weight: 600;
+  font-size: 2.75rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.08em;
+  color: #0b2342;
+}
+
+/* Paragraph spacing */
+.main-content p {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #333;
+}
+
+/* Link styling */
+.main-content a {
+  color: #0b2342;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.main-content a:hover {
+  border-color: #0b2342;
+}
+
+/*h1, h2, h3, .cover-hero-content h1 {
+  font-family: "Myanmar MN", serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #0B2342; /* your logo dark blue color */
+}*/
+
+body, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/*
+ * Make the main content container full-width on pages
+ * where it directly contains a .full-width-cover element.
+ * This is primarily for your homepage hero image.
+ */
+.hx-main-content:has(> .full-width-cover) {
+  max-width: none;     /* Remove any maximum width constraint */
+  padding-left: 0;     /* Remove any left padding */
+  padding-right: 0;    /* Remove any right padding */
+}
+
+/* Ensure your .full-width-cover and img are still set as before */
+.full-width-cover {
+  width: 100%;
+  height: 300px; /* Or your desired height */
+  overflow: hidden;
+}
+
+.full-width-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%; /* Adjust to focus on the desired part of the image */
+}
+
+
+/*.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px; /* limits content width for readability */
+  margin: 2rem auto;
+  gap: 3rem;
+  padding: 0 1rem;
+}*/
+
+/*.homepage-text {
+  flex: 1 1 55%;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #0a1f44; /* dark navy */
+  font-family: 'Myanmar MN', sans-serif; /* your logo font */
+}*/
+
+.homepage-text h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.homepage-text p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.homepage-text a {
+  color: #0a1f44;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.homepage-text a:hover {
+  text-decoration: underline;
+}
+
+.homepage-image {
+  flex: 1 1 40%;
+  max-width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(10, 31, 68, 0.1);
+}
+
+.homepage-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hextra_badge {
+  color: #223764;
+  hidden: true;
+}
+
