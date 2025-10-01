@@ -1,3 +1,9 @@
+---
+date: '2025-05-14T20:35:04-07:00'
+draft: false
+title: 'Portfolio'
+---
+
 <div style="line-height: 1.8;">
   <table style="border-collapse: collapse; width: 100%; border: none;">
     <thead style="background-color: transparent;">

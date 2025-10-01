@@ -8,59 +8,113 @@
       name="description"
       content="Bergenline Group collaborates with public- and private-sector partners to move complex urban real estate projects from idea to activation."
     />
+    <meta name="keywords" content="urban development, real estate, public-private partnerships, community development, placemaking" />
+    <meta name="author" content="Bergenline Group" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bergenlinegroup.com/" />
+    <meta property="og:title" content="Bergenline Group | Urban Real Estate Partners" />
+    <meta property="og:description" content="Bergenline Group collaborates with public- and private-sector partners to move complex urban real estate projects from idea to activation." />
+    <meta property="og:image" content="https://bergenlinegroup.com/images/cover.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bergenlinegroup.com/" />
+    <meta property="twitter:title" content="Bergenline Group | Urban Real Estate Partners" />
+    <meta property="twitter:description" content="Bergenline Group collaborates with public- and private-sector partners to move complex urban real estate projects from idea to activation." />
+    <meta property="twitter:image" content="https://bergenlinegroup.com/images/cover.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Scripts -->
     <script defer src="script.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Bergenline Group",
+      "url": "https://bergenlinegroup.com",
+      "logo": "https://bergenlinegroup.com/images/BLG-LO-FF.png",
+      "description": "Bergenline Group collaborates with public- and private-sector partners to move complex urban real estate projects from idea to activation.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@bergenlinegroup.com",
+        "contactType": "Business"
+      }
+    }
+    </script>
   </head>
   <body>
-    <header class="site-header" id="top">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    
+    <header class="site-header" id="top" role="banner">
       <div class="container header__inner">
         <a class="brand" href="#top" aria-label="Bergenline Group home">
           Bergenline<span>Group</span>
         </a>
-        <nav class="site-nav" data-nav>
+        <nav class="site-nav" data-nav role="navigation" aria-label="Main navigation">
           <button class="nav__close" type="button" data-nav-close aria-label="Close menu">
-            &times;
+            <span aria-hidden="true">&times;</span>
           </button>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#approach">Approach</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul role="menubar">
+            <li role="none"><a href="#about" role="menuitem">About</a></li>
+            <li role="none"><a href="#services" role="menuitem">Services</a></li>
+            <li role="none"><a href="#approach" role="menuitem">Approach</a></li>
+            <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+            <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
           </ul>
         </nav>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">
-          <span class="nav-toggle__line"></span>
-          <span class="nav-toggle__line"></span>
-          <span class="nav-toggle__line"></span>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Open navigation menu">
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
           <span class="sr-only">Open navigation</span>
         </button>
       </div>
     </header>
 
-    <main>
-      <section class="hero">
+    <main id="main-content" role="main">
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-heading">
         <div class="container hero__inner">
           <div class="hero__copy">
             <p class="eyebrow">Urban redevelopment partners</p>
-            <h1>We help neighborhoods realize responsible growth.</h1>
+            <h1 id="hero-heading">We help neighborhoods realize responsible growth.</h1>
             <p>
               Bergenline Group guides mission-driven development teams through strategy, entitlements,
               and activation so projects deliver lasting value for residents and stakeholders alike.
             </p>
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#contact">Start a conversation</a>
-              <a class="btn btn--ghost" href="#projects">View recent work</a>
+              <a class="btn btn--primary" href="#contact" aria-describedby="hero-heading">Start a conversation</a>
+              <a class="btn btn--ghost" href="#projects" aria-describedby="hero-heading">View recent work</a>
             </div>
           </div>
-          <div class="hero__card">
-            <h2>What we deliver</h2>
+          <div class="hero__card" role="complementary" aria-labelledby="hero-card-heading">
+            <h2 id="hero-card-heading">What we deliver</h2>
             <p>
               Strategic guidance across every project phase, grounded in careful research, transparent
               communication, and respect for the communities we serve.
@@ -74,14 +128,15 @@
         </div>
       </section>
 
-      <section class="section" id="about">
+      <!-- About Section -->
+      <section class="section" id="about" aria-labelledby="about-heading">
         <div class="container section__inner">
           <div class="section__header">
             <p class="eyebrow">Who we are</p>
-            <h2>Built on experience, driven by purpose.</h2>
+            <h2 id="about-heading">Built on experience, driven by purpose.</h2>
           </div>
           <div class="section__grid section__grid--two">
-            <div class="card card--text">
+            <article class="card card--text">
               <p>
                 Bergenline Group is an independent development and advisory studio focused on resilient
                 urban projects. We bridge public and private partners to reimagine existing assets,
@@ -91,23 +146,24 @@
                 From feasibility through activation, our team leans on collaborative planning, rigorous
                 analysis, and thoughtful stewardship to help clients move forward with confidence.
               </p>
-            </div>
-            <div class="card card--text">
+            </article>
+            <article class="card card--text">
               <ul class="list-highlight">
                 <li>Urban infill, mixed-use, and public realm assignments</li>
                 <li>Cross-functional team with backgrounds in planning, finance, and placemaking</li>
                 <li>Emphasis on transparent communication and measurable community benefit</li>
               </ul>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--muted" id="services">
+      <!-- Services Section -->
+      <section class="section section--muted" id="services" aria-labelledby="services-heading">
         <div class="container section__inner">
           <div class="section__header">
             <p class="eyebrow">What we do</p>
-            <h2>Integrated services for complex urban projects.</h2>
+            <h2 id="services-heading">Integrated services for complex urban projects.</h2>
             <p>
               We tailor each engagement to the local context, combining technical expertise with a
               commitment to meaningful community outcomes.
@@ -154,15 +210,16 @@
         </div>
       </section>
 
-      <section class="section" id="approach">
+      <!-- Approach Section -->
+      <section class="section" id="approach" aria-labelledby="approach-heading">
         <div class="container section__inner">
           <div class="section__header">
             <p class="eyebrow">How we work</p>
-            <h2>Partnerships anchored in transparency and trust.</h2>
+            <h2 id="approach-heading">Partnerships anchored in transparency and trust.</h2>
           </div>
-          <ol class="timeline">
-            <li>
-              <div class="timeline__marker">01</div>
+          <ol class="timeline" role="list">
+            <li role="listitem">
+              <div class="timeline__marker" aria-hidden="true">01</div>
               <div class="timeline__content">
                 <h3>Discover</h3>
                 <p>
@@ -171,8 +228,8 @@
                 </p>
               </div>
             </li>
-            <li>
-              <div class="timeline__marker">02</div>
+            <li role="listitem">
+              <div class="timeline__marker" aria-hidden="true">02</div>
               <div class="timeline__content">
                 <h3>Design</h3>
                 <p>
@@ -181,8 +238,8 @@
                 </p>
               </div>
             </li>
-            <li>
-              <div class="timeline__marker">03</div>
+            <li role="listitem">
+              <div class="timeline__marker" aria-hidden="true">03</div>
               <div class="timeline__content">
                 <h3>Deliver</h3>
                 <p>
@@ -195,15 +252,16 @@
         </div>
       </section>
 
-      <section class="section section--muted" id="projects">
+      <!-- Projects Section -->
+      <section class="section section--muted" id="projects" aria-labelledby="projects-heading">
         <div class="container section__inner">
           <div class="section__header">
             <p class="eyebrow">Recent work</p>
-            <h2>Supporting teams from vision to opening day.</h2>
+            <h2 id="projects-heading">Supporting teams from vision to opening day.</h2>
           </div>
-          <div class="projects">
-            <article class="project-card">
-              <div class="project-card__badge">Mixed-Use</div>
+          <div class="projects" role="list">
+            <article class="project-card" role="listitem">
+              <div class="project-card__badge" aria-hidden="true">Mixed-Use</div>
               <h3>Transit-oriented districts</h3>
               <p>
                 Coordinated site planning, financing strategy, and stakeholder outreach for mixed-income
@@ -215,8 +273,8 @@
                 <li>Phased implementation roadmaps</li>
               </ul>
             </article>
-            <article class="project-card">
-              <div class="project-card__badge">Public Realm</div>
+            <article class="project-card" role="listitem">
+              <div class="project-card__badge" aria-hidden="true">Public Realm</div>
               <h3>Civic space revitalization</h3>
               <p>
                 Partnered with municipalities to align capital improvements, programming, and operations
@@ -228,8 +286,8 @@
                 <li>Long-term stewardship frameworks</li>
               </ul>
             </article>
-            <article class="project-card">
-              <div class="project-card__badge">Hospitality</div>
+            <article class="project-card" role="listitem">
+              <div class="project-card__badge" aria-hidden="true">Hospitality</div>
               <h3>Experience-driven hospitality</h3>
               <p>
                 Advised mission-led operators on concept development, tenant alignment, and launch plans
@@ -245,44 +303,78 @@
         </div>
       </section>
 
-      <section class="section section--accent">
+      <!-- CTA Section -->
+      <section class="section section--accent" aria-labelledby="cta-heading">
         <div class="container section__inner section__inner--cta">
           <div>
-            <h2>Bring us into the conversation early.</h2>
+            <h2 id="cta-heading">Bring us into the conversation early.</h2>
             <p>
               Whether you are shaping a new district or repositioning an existing asset, we help teams
               identify opportunities, build consensus, and move forward together.
             </p>
           </div>
-          <a class="btn btn--light" href="#contact">Schedule a strategy session</a>
+          <a class="btn btn--light" href="#contact" aria-describedby="cta-heading">Schedule a strategy session</a>
         </div>
       </section>
 
-      <section class="section" id="contact">
+      <!-- Contact Section -->
+      <section class="section" id="contact" aria-labelledby="contact-heading">
         <div class="container section__inner section__inner--split">
           <div class="section__header">
             <p class="eyebrow">Contact</p>
-            <h2>Let’s collaborate.</h2>
+            <h2 id="contact-heading">Let's collaborate.</h2>
             <p>Share your project details and a member of our team will follow up promptly.</p>
           </div>
-          <form class="contact-form" action="https://formspree.io/f/mayvlwvr" method="POST">
-            <label>
+          <form class="contact-form" action="https://formspree.io/f/mayvlwvr" method="POST" novalidate>
+            <label for="contact-name">
               <span>Name</span>
-              <input type="text" name="name" placeholder="Your name" required />
+              <input 
+                type="text" 
+                id="contact-name"
+                name="name" 
+                placeholder="Your name" 
+                required 
+                aria-describedby="name-error"
+              />
+              <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
             </label>
-            <label>
+            <label for="contact-email">
               <span>Email</span>
-              <input type="email" name="email" placeholder="you@example.com" required />
+              <input 
+                type="email" 
+                id="contact-email"
+                name="email" 
+                placeholder="you@example.com" 
+                required 
+                aria-describedby="email-error"
+              />
+              <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
             </label>
-            <label>
+            <label for="contact-organization">
               <span>Organization</span>
-              <input type="text" name="organization" placeholder="Company or agency" />
+              <input 
+                type="text" 
+                id="contact-organization"
+                name="organization" 
+                placeholder="Company or agency" 
+              />
             </label>
-            <label>
+            <label for="contact-message">
               <span>How can we help?</span>
-              <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+              <textarea 
+                id="contact-message"
+                name="message" 
+                rows="4" 
+                placeholder="Tell us about your project" 
+                required 
+                aria-describedby="message-error"
+              ></textarea>
+              <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
             </label>
-            <button class="btn btn--primary" type="submit">Send message</button>
+            <button class="btn btn--primary" type="submit" aria-describedby="contact-heading">
+              <span class="btn-text">Send message</span>
+              <span class="btn-loading" aria-hidden="true">Sending...</span>
+            </button>
             <p class="form-footnote">
               Prefer email? Reach us directly at
               <a href="mailto:info@bergenlinegroup.com">info@bergenlinegroup.com</a>.
@@ -292,7 +384,7 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="container site-footer__inner">
         <div>
           <a class="brand brand--footer" href="#top">Bergenline<span>Group</span></a>
@@ -300,15 +392,45 @@
         </div>
         <div class="site-footer__meta">
           <p>&copy; <span id="year"></span> Bergenline Group. All rights reserved.</p>
-          <ul class="site-footer__links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="site-footer__links" role="list">
+            <li role="listitem"><a href="#services">Services</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </footer>
 
+    <!-- Accessibility and feedback -->
     <div class="sr-only" aria-live="polite" id="announcement"></div>
+    
+    <!-- Back to top button -->
+    <button 
+      class="back-to-top" 
+      type="button" 
+      aria-label="Back to top"
+      style="
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 50%;
+        background: var(--color-accent);
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-lg);
+        transition: var(--transition);
+        z-index: var(--z-fixed);
+      "
+    >
+      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+    </button>
   </body>
 </html>

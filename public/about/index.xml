@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> – Portfolio</title>
-    <link>http://localhost:1313/portfolio/</link>
-    <description>Recent content in Portfolio on </description>
+    <title> – About</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in About on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 May 2025 20:35:04 -0700</lastBuildDate>
     
-	  <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     
     
       
