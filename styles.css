@@ -1303,3 +1303,134 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* Portfolio table */
+.portfolio-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 1.2rem;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+}
+
+.portfolio-table th {
+  font-weight: 600;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.3rem;
+}
+
+.portfolio-table tbody tr {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.portfolio-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.portfolio-table td::before {
+  display: none;
+}
+
+.portfolio-table td.logo-cell,
+.portfolio-table th:first-child {
+  text-align: left;
+}
+
+.portfolio-table .company-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.portfolio-table .company-link:hover,
+.portfolio-table .company-link:focus-visible {
+  color: var(--color-accent);
+}
+
+.portfolio-table .company-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .portfolio-table-wrapper {
+    overflow-x: visible;
+  }
+
+  .portfolio-table {
+    min-width: 0;
+  }
+
+  .portfolio-table thead {
+    display: none;
+  }
+
+  .portfolio-table tbody {
+    display: grid;
+    gap: 1.6rem;
+  }
+
+  .portfolio-table tbody tr {
+    display: grid;
+    gap: 1.2rem;
+    padding: 1.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .portfolio-table th,
+  .portfolio-table td {
+    text-align: left;
+  }
+
+  .portfolio-table td {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0;
+    font-size: 1.5rem;
+    color: var(--color-text);
+  }
+
+  .portfolio-table td::before {
+    display: block;
+    content: attr(data-label);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+  }
+
+  .portfolio-table td.logo-cell {
+    gap: 0.8rem;
+  }
+
+  .portfolio-table .company-link {
+    gap: 1.2rem;
+  }
+
+  .portfolio-table .company-link span {
+    font-size: 1.6rem;
+  }
+}

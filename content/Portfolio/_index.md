@@ -4,61 +4,56 @@ draft: false
 title: 'Portfolio'
 ---
 
-<div style="line-height: 1.8;">
-  <table style="border-collapse: collapse; width: 100%; border: none;">
-    <thead style="background-color: transparent;">
+<div class="portfolio-table-wrapper">
+  <table class="portfolio-table">
+    <thead>
       <tr>
-        <th style="border: none; padding: 0.75rem; text-align: left;"></th>
-        <th style="text-align: center; border: none; padding: 0.75rem;">Company</th>
-        <th style="text-align: center; border: none; padding: 0.75rem;">Round Invested</th>
-        <th style="text-align: center; border: none; padding: 0.75rem;">Year Invested</th>
-        <th style="text-align: center; border: none; padding: 0.75rem;">Status</th>
+        <th scope="col">Company</th>
+        <th scope="col">Round Invested</th>
+        <th scope="col">Year Invested</th>
+        <th scope="col">Status</th>
       </tr>
     </thead>
     <tbody>
-        <tr>
-        <td style="text-align: left; border: none; padding: 0.75rem;">
-          <a href="https://www.littio.co" target="_blank" rel="noopener noreferrer">
-            <img src="/images/littio.png" alt="Littio Logo" style="max-height: 50px; width: auto; vertical-align: middle;">
+      <tr>
+        <td class="logo-cell" data-label="Company">
+          <a class="company-link" href="https://www.littio.co" target="_blank" rel="noopener noreferrer">
+            <img class="company-logo" src="/images/littio.png" alt="Littio logo">
           </a>
         </td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Littio</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Pre-Seed</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">2022</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Active</td>
+        <td data-label="Round Invested">Pre-Seed</td>
+        <td data-label="Year Invested">2022</td>
+        <td data-label="Status">Active</td>
       </tr>
       <tr>
-        <td style="text-align: left; border: none; padding: 0.75rem;">
-          <a href="https://www.platter.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/platter.svg" alt="Platter Logo" style="max-height: 50px; width: auto; vertical-align: middle;">
+        <td class="logo-cell" data-label="Company">
+          <a class="company-link" href="https://www.platter.com" target="_blank" rel="noopener noreferrer">
+            <img class="company-logo" src="/images/platter.svg" alt="Platter logo">
           </a>
         </td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Platter</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Pre-Seed</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">2023</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Active</td>
+        <td data-label="Round Invested">Pre-Seed</td>
+        <td data-label="Year Invested">2023</td>
+        <td data-label="Status">Active</td>
       </tr>
       <tr>
-        <td style="text-align: left; border: none; padding: 0.75rem;">
-          <a href="https://www.hardskills.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/Hardskills.png" alt="Hardskills Logo" style="max-height: 50px; width: auto; vertical-align: middle;">
+        <td class="logo-cell" data-label="Company">
+          <a class="company-link" href="https://www.hardskills.com" target="_blank" rel="noopener noreferrer">
+            <img class="company-logo" src="/images/Hardskills.png" alt="Hardskills logo">
           </a>
         </td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Hardskills</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Seed</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">2024</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Active</td>
+        <td data-label="Round Invested">Seed</td>
+        <td data-label="Year Invested">2024</td>
+        <td data-label="Status">Active</td>
       </tr>
       <tr>
-        <td style="text-align: left; border: none; padding: 0.75rem;">
-          <a href="https://www.rodeosnacks.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/rodenosnacks.png" alt="Rodeo Snacks Logo" style="max-height: 50px; width: auto; vertical-align: middle;">
+        <td class="logo-cell" data-label="Company">
+          <a class="company-link" href="https://www.rodeosnacks.com" target="_blank" rel="noopener noreferrer">
+            <img class="company-logo" src="/images/RODEO SNACKS.png" alt="Rodeo Snacks logo">
           </a>
         </td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Rodeo Snacks</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">F&F</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">2025</td>
-        <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Developing</td>
+        <td data-label="Round Invested">F&F</td>
+        <td data-label="Year Invested">2025</td>
+        <td data-label="Status">Developing</td>
       </tr>
     </tbody>
   </table>
