@@ -254,6 +254,12 @@ body, p {
   color: #1a3a5f;
 }
 
+/* Hide page titles */
+.content h1,
+main h1 {
+  display: none;
+}
+
 /* Responsive table */
 @media (max-width: 768px) {
   .content table {
