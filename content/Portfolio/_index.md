@@ -46,7 +46,7 @@
       <tr>
         <td style="text-align: left; border: none; padding: 0.75rem;">
           <a href="https://www.rodeosnacks.com" target="_blank" rel="noopener noreferrer">
-            <img src="/images/rodeosnacks.png" alt="Rodeo Snacks Logo" style="max-height: 50px; width: auto; vertical-align: middle;">
+            <img src="/images/rodeosnacks1.png" alt="Rodeo Snacks Logo" style="max-height: 50px; width: auto; vertical-align: middle;">
           </a>
         </td>
         <td style="text-align: center; border: none; padding: 0.75rem; vertical-align: middle;">Rodeo Snacks</td>
