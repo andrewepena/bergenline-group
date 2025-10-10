@@ -48,7 +48,7 @@ title: 'Portfolio'
       <tr>
         <td class="logo-cell" data-label="Company">
           <a class="company-link" href="https://www.rodeosnacks.com" target="_blank" rel="noopener noreferrer">
-            <img class="company-logo" src="/images/RODEO SNACKS.png" alt="Rodeo Snacks logo">
+            <img class="company-logo" src="/images/rodeo_logo.png" alt="Rodeo Snacks logo">
           </a>
         </td>
         <td data-label="Round Invested">F&F</td>
