@@ -2,7 +2,7 @@
 
 .content {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #;
+  color: #1a1a1a;
 }
 
 .content code:not(.code-block code) {
@@ -14,8 +14,8 @@
 }
 
 .nav-container img {
-  padding-top: 20;
-  padding-bottom: 8;
+  padding-top: 20px;
+  padding-bottom: 8px;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 /*  max-height: 48px;*/
 /*  height: auto;*/
@@ -64,7 +64,7 @@
   font-family: "Myanmar MN", serif;
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: #0B2342; /* your logo dark blue color */
+  color: #0B2342;
 }*/
 
 body, p {
@@ -110,7 +110,7 @@ body, p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px; /* limits content width for readability */
+  max-width: 1100px;
   margin: 2rem auto;
   gap: 3rem;
   padding: 0 1rem;
@@ -120,8 +120,8 @@ body, p {
   flex: 1 1 55%;
   max-width: 600px;
   line-height: 1.6;
-  color: #0a1f44; /* dark navy */
-  font-family: 'Myanmar MN', sans-serif; /* your logo font */
+  color: #0a1f44;
+  font-family: 'Myanmar MN', sans-serif;
 }*/
 
 .homepage-text h1 {
@@ -163,7 +163,7 @@ body, p {
 
 .hextra_badge {
   color: #223764;
-  hidden: true;
+  display: none;
 }
 
 /* Portfolio Table Styles - Updated to target .content instead of .main-content */
