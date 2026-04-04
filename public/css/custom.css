@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+/* ===== Base Typography ===== */
+
+body, p {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
 .content {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #1a1a1a;
@@ -16,149 +24,6 @@
 .nav-container img {
   padding-top: 20px;
   padding-bottom: 8px;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-/*  max-height: 48px;*/
-/*  height: auto;*/
-}
-
-.main-content {
-  max-width: 800px;
-  margin: 3rem auto;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #1a1a1a;
-  letter-spacing: 0.04em;
-  line-height: 1.7;
-}
-
-/* Headings style */
-.main-content h1 {
-  font-weight: 600;
-  font-size: 2.75rem;
-  margin-bottom: 1.25rem;
-  letter-spacing: 0.08em;
-  color: #0b2342;
-}
-
-/* Paragraph spacing */
-.main-content p {
-  margin-bottom: 1.25rem;
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: #333;
-}
-
-/* Link styling */
-.main-content a {
-  color: #0b2342;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
-.main-content a:hover {
-  border-color: #0b2342;
-}
-
-/*h1, h2, h3, .cover-hero-content h1 {
-  font-family: "Myanmar MN", serif;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: #0B2342;
-}*/
-
-body, p {
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #1a1a1a;
-  line-height: 1.6;
-}
-
-.full-width-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 2rem;
-}
-
-/*
- * Make the main content container full-width on pages
- * where it directly contains a .full-width-cover element.
- * This is primarily for your homepage hero image.
- */
-.hx-main-content:has(> .full-width-cover) {
-  max-width: none;     /* Remove any maximum width constraint */
-  padding-left: 0;     /* Remove any left padding */
-  padding-right: 0;    /* Remove any right padding */
-}
-
-/* Ensure your .full-width-cover and img are still set as before */
-.full-width-cover {
-  width: 100%;
-  height: 300px; /* Or your desired height */
-  overflow: hidden;
-}
-
-.full-width-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%; /* Adjust to focus on the desired part of the image */
-}
-
-
-/*.homepage-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 2rem auto;
-  gap: 3rem;
-  padding: 0 1rem;
-}*/
-
-/*.homepage-text {
-  flex: 1 1 55%;
-  max-width: 600px;
-  line-height: 1.6;
-  color: #0a1f44;
-  font-family: 'Myanmar MN', sans-serif;
-}*/
-
-.homepage-text h1 {
-  font-weight: 700;
-  font-size: 2.8rem;
-  margin-bottom: 1.2rem;
-}
-
-.homepage-text p {
-  font-weight: 400;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.homepage-text a {
-  color: #0a1f44;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.homepage-text a:hover {
-  text-decoration: underline;
-}
-
-.homepage-image {
-  flex: 1 1 40%;
-  max-width: 400px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(10, 31, 68, 0.1);
-}
-
-.homepage-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
 }
 
 .hextra_badge {
@@ -166,7 +31,161 @@ body, p {
   display: none;
 }
 
-/* Portfolio Table Styles - Updated to target .content instead of .main-content */
+/* ===== Homepage Page Layout ===== */
+
+.homepage-wrapper {
+  width: 100%;
+}
+
+.homepage-wrapper main {
+  padding: 0;
+}
+
+/* ===== Hero Cover Image ===== */
+
+.full-width-cover {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
+  animation: heroFade 0.8s ease-out both;
+}
+
+.full-width-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.full-width-cover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+
+/* ===== Homepage Body Content ===== */
+
+.homepage-body {
+  max-width: 720px;
+  margin: -2rem auto 0;
+  position: relative;
+  z-index: 1;
+  padding: 0 1.5rem 4rem;
+  animation: fadeUp 0.7s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.homepage-body h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #0b2342;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  display: block !important;
+}
+
+.homepage-body p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.homepage-body a {
+  color: #0b2342;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(11, 35, 66, 0.2);
+  transition: border-color 0.3s ease, color 0.3s ease;
+  padding-bottom: 1px;
+}
+
+.homepage-body a:hover {
+  border-color: #0b2342;
+  color: #1a3a5f;
+}
+
+/* ===== Animations ===== */
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Homepage ===== */
+
+@media (max-width: 768px) {
+  .full-width-cover {
+    height: 45vh;
+    min-height: 280px;
+  }
+
+  .homepage-body {
+    margin-top: -1rem;
+    padding: 0 1.25rem 3rem;
+  }
+
+  .homepage-body h1 {
+    font-size: 1.75rem;
+  }
+
+  .homepage-body p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .full-width-cover {
+    height: 38vh;
+    min-height: 220px;
+  }
+
+  .homepage-body h1 {
+    font-size: 1.5rem;
+  }
+
+  .homepage-body p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== Hide page titles on non-homepage pages ===== */
+
+.content h1,
+main h1 {
+  display: none;
+}
+
+/* ===== Portfolio Table Styles ===== */
+
 .content table {
   border-collapse: separate;
   border-spacing: 0;
@@ -254,54 +273,48 @@ body, p {
   color: #1a3a5f;
 }
 
-/* Hide page titles */
-.content h1,
-main h1 {
-  display: none;
-}
+/* ===== Responsive Portfolio Table ===== */
 
-/* Responsive table */
 @media (max-width: 768px) {
   .content table {
     font-size: 0.8rem;
     width: 100%;
     table-layout: fixed;
   }
-  
+
   .content thead th {
     padding: 0.6rem 0.3rem;
     word-wrap: break-word;
     font-size: 0.7rem;
     text-align: center;
   }
-  
+
   .content tbody td {
     padding: 0.6rem 0.3rem;
     word-wrap: break-word;
     text-align: center;
   }
-  
+
   .content tbody td img {
     max-height: 30px;
   }
-  
-  /* Column widths for mobile */
+
   .content table th:nth-child(1),
   .content table td:nth-child(1) {
     width: 35%;
     text-align: left;
   }
-  
+
   .content table th:nth-child(2),
   .content table td:nth-child(2) {
     width: 22%;
   }
-  
+
   .content table th:nth-child(3),
   .content table td:nth-child(3) {
     width: 22%;
   }
-  
+
   .content table th:nth-child(4),
   .content table td:nth-child(4) {
     width: 21%;
@@ -312,23 +325,22 @@ main h1 {
   .content table {
     font-size: 0.75rem;
   }
-  
+
   .content thead th {
     padding: 0.5rem 0.2rem;
     font-size: 0.65rem;
     text-align: center;
   }
-  
+
   .content tbody td {
     padding: 0.5rem 0.2rem;
     text-align: center;
   }
-  
+
   .content tbody td img {
     max-height: 25px;
   }
-  
-  /* Keep company column left-aligned on small screens */
+
   .content table th:nth-child(1),
   .content table td:nth-child(1) {
     text-align: left;
