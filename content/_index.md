@@ -1,6 +1,5 @@
 ---
 title: "Home"
-layout: page
 ---
 
 <div class="full-width-cover">
