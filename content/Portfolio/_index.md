@@ -53,7 +53,7 @@ title: 'Portfolio'
         </td>
         <td data-label="Round Invested">F&F</td>
         <td data-label="Year Invested">2025</td>
-        <td data-label="Status">Developing</td>
+        <td data-label="Status">Active</td>
       </tr>
     </tbody>
   </table>
